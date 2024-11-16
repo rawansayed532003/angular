@@ -1,0 +1,18 @@
+
+        <!-- <img src="assets/1.jpg" alt="img"(click)="onlogoclick()"> -->
+        <button type="button" (click)="print()">Print</button>
+        <h1>{{title}} "and"{{data.name}}</h1>
+        <input [value]="title" >
+        <input [value]=" data.name">
+        <input [ngmodel]="Username" (ngmodelchange)="Username=$event"/>
+        <!-- <input [value]="Username" (input)="Username = $event.target.value" /> -->
+        <input [(ngmodel)]="Username" />
+
+        <!-- <input [value]="Username" (input)="Username = ($event.target as HTMLInputElement).value" /> -->
+        <p>Username is:{{Username}}</p>
+  
+      
+       
+        
+
+
